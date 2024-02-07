@@ -31,8 +31,6 @@
 #include <string.h>
 #include <vector>
 
-#include "supermon64.h"
-
 #include "core/myc64/roms/kernal.h"
 #include "core/myc64/roms/basic.h"
 #include "core/myc64/roms/characters.h"

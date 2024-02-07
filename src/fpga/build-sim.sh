@@ -4,7 +4,7 @@ set -e
 OBJ_DIR=obj_dir
 rm -rf $OBJ_DIR
 
-verilator -trace -cc +1364-2005ext+v core/core_top.v core/core_bridge_cmd.v apf/common.v core/myc64/rtl/myc64/*.v core/picorv32.v -Wno-fatal \
+verilator -trace -cc +1364-2005ext+v --top-module core_top core/spram.v core/sprom.v core/core_top.v core/core_bridge_cmd.v apf/common.v core/myc64/rtl/myc64/*.v core/picorv32.v -Wno-fatal \
 +define+__VERILATOR__=1
 
 VERILATOR_ROOT=/usr/share/verilator/
